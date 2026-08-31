@@ -1,0 +1,17 @@
+name: postgres
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres-learning
+    environment:
+      POSTGRES_DB: learning_db
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_dataluigui:/var/lib/postgresql/data
+
+volumes:
+  postgres_dataluigui:

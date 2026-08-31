@@ -1,0 +1,153 @@
+order_id,order_date,customer_id,customer_name,product_id,product_name,category,quantity,unit_price,discount_pct,total_amount,region,sales_channel,payment_method
+1000,2026-06-13,C100,Camila Rojas,P001,Audífonos Bluetooth X200,Audio,3,89900,0.0,269700.0,Medellín,online,Tarjeta Débito
+1001,01/06/2026,C101,Valentina Díaz,P001,Audífonos Bluetooth X200,Audio,1,89900,0.0,89900.0,Medellín,online,Contraentrega
+1002,2026-06-16,C102,Laura Gómez,P009,Power Bank 20000mAh,Accesorios,2,79900,0.0,159800.0,Barranquilla,tienda fisica,Efectivo
+1003,28/06/2026,C103,Carlos Ruiz,P006,Teclado Mecánico RGB,computacion,1,189900,0.0,189900.0,Medellín,Marketplace,Tarjeta Crédito
+1004,2026-03-30,C104,Sofía Ramírez,P005,Mouse inalámbrico Pro,Computación,-1,45900,0.0,,Barranquilla,tienda fisica,Tarjeta Crédito
+1005,22/05/2026,C105,,P010,Base Enfriadora Laptop,Computación,-1,99900,0.0,,"cartagena ",online,Tarjeta Crédito
+1006,2026-03-16,C106,Pedro Sánchez,P004,Bombillo Inteligente WiFi,Hogar Inteligente,-1,39900,0.0,,cali,Marketplace,PSE
+1007,05/04/2026,C107,Juan Pérez,P004,Bombillo Inteligente WiFi,Hogar Inteligente,3,39900,0.0,119700.0,bogota,tienda fisica,Tarjeta Débito
+1008,29/04/2026,C108,Laura Gómez,P005,Mouse inalámbrico Pro,Computación,3,45900,15.0,117045.0,Cartagena,online,Efectivo
+1009,09/01/2026,C109,Diego Castro,P007,Parlante Portátil Boom,audio,1,129900,0.0,129900.0,Medellín,tienda fisica,Efectivo
+1010,14/06/2026,C110,Luis Herrera,P003,Cargador rápido 65W,accesorios,1,59900,0.0,59900.0,Medellín,"Online ",Contraentrega
+1011,30/05/2026,C111,Carlos Ruiz,P006,Teclado Mecánico RGB,Computación,1,189900,0.0,189900.0,Cartagena,Tienda Física,Tarjeta Crédito
+1012,2026-06-10,C112,Valentina Díaz,P007,Parlante Portátil Boom,audio,2,129900,0.0,259800.0,cali,Tienda Física,Contraentrega
+1013,2026-05-22,C113,Sofía Ramírez,P002,Smartwatch Fit 3,Electrónica,3,259900,10.0,701730.0,medellin,"Online ",Efectivo
+1014,2026-04-27,C114,María López,P005,Mouse inalámbrico Pro,Computación,2,45900,,91800.0,BOGOTA,tienda fisica,Tarjeta Crédito
+1015,09/02/2026,C115,Laura Gómez,P003,Cargador rápido 65W,Accesorios,2,59900,,119800.0,Cartagena,Online,Contraentrega
+1016,03/04/2026,C116,Carlos Ruiz,P004,Bombillo Inteligente WiFi,Hogar Inteligente,1,39900,0.0,39900.0,"cartagena ",Online,Tarjeta Crédito
+1017,2026-02-02,C117,Juan Pérez,P008,Cámara de Seguridad WiFi,Hogar Inteligente,2,149900,0.0,299800.0,medellin,tienda fisica,Contraentrega
+1018,21/03/2026,C118,Pedro Sánchez,P006,Teclado Mecánico RGB,Computación,2,189900,10.0,341820.0,Barranquilla,Online,Tarjeta Débito
+1019,2026-05-31,C119,Laura Gómez,P004,Bombillo Inteligente WiFi,hogar inteligente,2,39900,0.0,79800.0,Bogotá,Online,Tarjeta Crédito
+1020,2026-01-19,C120,Andrés Morales,P004,Bombillo Inteligente WiFi,hogar inteligente,1,39900,15.0,33915.0,Barranquilla,online,Contraentrega
+1021,04/03/2026,C121,Sofía Ramírez,P007,Parlante Portátil Boom,audio,1,129900,0.0,129900.0,bogota,"Online ",PSE
+1022,2026-01-14,C122,Valentina Díaz,P002,Smartwatch Fit 3,electronica,1,259900,5.0,246905.0,Cali,Online,Tarjeta Débito
+1023,05/02/2026,C123,Valentina Díaz,P003,Cargador rápido 65W,Accesorios,1,59900,5.0,56905.0,Medellín,Online,PSE
+1024,2026-01-13,C124,Diego Castro,P009,Power Bank 20000mAh,Accesorios,-1,79900,0.0,,bogota,online,Tarjeta Débito
+1025,2026-04-13,C125,Luis Herrera,P003,Cargador rápido 65W,accesorios,2,59900,0.0,119800.0,cali,Marketplace,PSE
+1026,2026-02-09,C126,Pedro Sánchez,P005,Mouse inalámbrico Pro,Computación,1,45900,0.0,45900.0,"cartagena ","Online ",Contraentrega
+1027,2026-01-13,C127,Carlos Ruiz,P008,Cámara de Seguridad WiFi,Hogar Inteligente,2,149900,,299800.0,Cartagena,online,Tarjeta Crédito
+1028,2026-01-18,C128,Andrés Morales,P002,Smartwatch Fit 3,Electrónica,3,259900,,779700.0,Medellín,Tienda Física,Tarjeta Crédito
+1029,2026-05-29,C129,Pedro Sánchez,P001,Audífonos Bluetooth X200,audio,2,89900,0.0,179800.0,cali,"Online ",Contraentrega
+1030,2026-02-22,C130,Carlos Ruiz,P006,Teclado Mecánico RGB,Computación,1,189900,0.0,189900.0,cali,online,Efectivo
+1031,2026-04-28,C131,Pedro Sánchez,P010,Base Enfriadora Laptop,Computación,1,99900,0.0,99900.0,Cartagena,online,Contraentrega
+1032,04/03/2026,C132,Camila Rojas,P005,Mouse inalámbrico Pro,Computación,1,45900,5.0,43605.0,Cartagena,"Online ",Efectivo
+1033,2026-06-20,C133,Luis Herrera,P005,Mouse inalámbrico Pro,Computación,3,45900,0.0,137700.0,BOGOTA,Marketplace,Tarjeta Crédito
+1034,11/03/2026,C134,María López,P010,Base Enfriadora Laptop,Computación,1,99900,15.0,84915.0,Cali,online,Efectivo
+1035,2026-01-24,C135,Camila Rojas,P007,Parlante Portátil Boom,audio,-1,129900,0.0,,Bogotá,Online,Efectivo
+1036,2026-02-11,C136,Luis Herrera,P008,Cámara de Seguridad WiFi,Hogar Inteligente,2,149900,15.0,254830.0,cali,tienda fisica,Tarjeta Crédito
+1037,2026-05-20,C137,,P006,Teclado Mecánico RGB,computacion,2,189900,10.0,341820.0,BOGOTA,Tienda Física,Tarjeta Débito
+1038,11/01/2026,C138,Sofía Ramírez,P004,Bombillo Inteligente WiFi,Hogar Inteligente,3,39900,0.0,119700.0,bogota,Marketplace,Contraentrega
+1039,2026-03-02,C139,Sofía Ramírez,P003,Cargador rápido 65W,Accesorios,2,59900,0.0,119800.0,BOGOTA,"Online ",Efectivo
+1040,2026-03-10,C100,Diego Castro,P002,Smartwatch Fit 3,electronica,2,259900,,519800.0,Bogotá,Tienda Física,Tarjeta Débito
+1041,2026-03-20,C101,Carlos Ruiz,P004,Bombillo Inteligente WiFi,hogar inteligente,1,39900,15.0,33915.0,Medellín,Tienda Física,Efectivo
+1042,2026-03-31,C102,María López,P009,Power Bank 20000mAh,Accesorios,2,79900,15.0,135830.0,Cartagena,Marketplace,Tarjeta Crédito
+1043,29/05/2026,C103,Valentina Díaz,P001,Audífonos Bluetooth X200,Audio,1,89900,10.0,80910.0,cali,Marketplace,Efectivo
+1044,2026-04-09,C104,Valentina Díaz,P004,Bombillo Inteligente WiFi,Hogar Inteligente,1,39900,0.0,39900.0,cali,Online,Contraentrega
+1045,04/04/2026,C105,María López,P002,Smartwatch Fit 3,ELECTRONICA,3,259900,0.0,779700.0,"cartagena ",Marketplace,Tarjeta Crédito
+1046,2026-03-21,C106,Camila Rojas,P007,Parlante Portátil Boom,audio,1,129900,5.0,123405.0,medellin,tienda fisica,Tarjeta Débito
+1047,2026-06-23,C107,María López,P003,Cargador rápido 65W,accesorios,2,59900,10.0,107820.0,medellin,Tienda Física,Contraentrega
+1048,23/02/2026,C108,Juan Pérez,P010,Base Enfriadora Laptop,computacion,2,99900,15.0,169830.0,Cali,Tienda Física,PSE
+1049,2026-02-13,C109,Juan Pérez,P002,Smartwatch Fit 3,ELECTRONICA,1,259900,10.0,233910.0,"cartagena ",Marketplace,Tarjeta Crédito
+1050,2026-03-21,C110,Carlos Ruiz,P004,Bombillo Inteligente WiFi,hogar inteligente,1,39900,0.0,39900.0,Bogotá,online,PSE
+1051,2026-04-17,C111,Camila Rojas,P010,Base Enfriadora Laptop,Computación,1,99900,15.0,84915.0,cali,Tienda Física,PSE
+1052,28/01/2026,C112,Carlos Ruiz,P004,Bombillo Inteligente WiFi,hogar inteligente,1,39900,,39900.0,Cartagena,Tienda Física,Tarjeta Crédito
+1053,04/02/2026,C113,Valentina Díaz,P009,Power Bank 20000mAh,accesorios,2,79900,10.0,143820.0,Cali,Tienda Física,Contraentrega
+1054,21/05/2026,C114,Camila Rojas,P003,Cargador rápido 65W,accesorios,3,59900,,179700.0,Barranquilla,Tienda Física,Efectivo
+1055,14/05/2026,C115,Pedro Sánchez,P004,Bombillo Inteligente WiFi,hogar inteligente,1,39900,5.0,37905.0,bogota,"Online ",Efectivo
+1056,2026-05-19,C116,Carlos Ruiz,P003,Cargador rápido 65W,accesorios,1,59900,0.0,59900.0,cali,"Online ",Tarjeta Débito
+1057,15/04/2026,C117,Andrés Morales,P009,Power Bank 20000mAh,Accesorios,2,79900,5.0,151810.0,Bogotá,online,PSE
+1058,28/05/2026,C118,Luis Herrera,P008,Cámara de Seguridad WiFi,Hogar Inteligente,1,149900,0.0,149900.0,medellin,Tienda Física,PSE
+1059,2026-05-05,C119,Sofía Ramírez,P005,Mouse inalámbrico Pro,Computación,2,45900,5.0,87210.0,Bogotá,Tienda Física,Efectivo
+1060,2026-04-30,C120,Carlos Ruiz,P010,Base Enfriadora Laptop,computacion,2,99900,0.0,199800.0,cali,tienda fisica,Contraentrega
+1061,04/02/2026,C121,Pedro Sánchez,P003,Cargador rápido 65W,accesorios,1,59900,0.0,59900.0,cali,Marketplace,Tarjeta Débito
+1062,13/03/2026,C122,Pedro Sánchez,P005,Mouse inalámbrico Pro,Computación,-1,45900,0.0,,Barranquilla,Online,Contraentrega
+1063,2026-06-16,C123,Juan Pérez,P001,Audífonos Bluetooth X200,Audio,-1,89900,0.0,,Medellín,online,Tarjeta Crédito
+1064,2026-05-02,C124,Ana Torres,P002,Smartwatch Fit 3,ELECTRONICA,2,259900,0.0,519800.0,Barranquilla,"Online ",Efectivo
+1065,2026-06-05,C125,María López,P002,Smartwatch Fit 3,ELECTRONICA,-1,259900,,,BOGOTA,Marketplace,Tarjeta Crédito
+1066,23/06/2026,C126,María López,P007,Parlante Portátil Boom,Audio,3,129900,0.0,389700.0,bogota,tienda fisica,Tarjeta Débito
+1067,2026-05-25,C127,Laura Gómez,P006,Teclado Mecánico RGB,computacion,2,189900,5.0,360810.0,Cali,Online,Contraentrega
+1068,2026-05-06,C128,Luis Herrera,P007,Parlante Portátil Boom,audio,1,129900,15.0,110415.0,Barranquilla,"Online ",Tarjeta Débito
+1069,2026-06-07,C129,Carlos Ruiz,P008,Cámara de Seguridad WiFi,hogar inteligente,2,149900,5.0,284810.0,"cartagena ",Marketplace,Efectivo
+1070,2026-04-26,C130,Pedro Sánchez,P008,Cámara de Seguridad WiFi,Hogar Inteligente,2,149900,10.0,269820.0,cali,Marketplace,Tarjeta Crédito
+1071,2026-05-05,C131,María López,P006,Teclado Mecánico RGB,Computación,-1,189900,0.0,,Cali,Marketplace,Contraentrega
+1072,2026-05-13,C132,Luis Herrera,P002,Smartwatch Fit 3,electronica,1,259900,15.0,220915.0,cali,Tienda Física,Contraentrega
+1073,2026-06-15,C133,Luis Herrera,P008,Cámara de Seguridad WiFi,Hogar Inteligente,2,149900,,299800.0,Bogotá,Online,Efectivo
+1074,2026-03-20,C134,Luis Herrera,P010,Base Enfriadora Laptop,computacion,1,99900,5.0,94905.0,Cartagena,tienda fisica,Efectivo
+1075,2026-04-01,C135,Pedro Sánchez,P008,Cámara de Seguridad WiFi,Hogar Inteligente,1,149900,0.0,149900.0,medellin,online,Tarjeta Crédito
+1076,2026-05-18,C136,Valentina Díaz,P003,Cargador rápido 65W,accesorios,1,59900,0.0,59900.0,Barranquilla,Marketplace,Contraentrega
+1077,2026-01-26,C137,Ana Torres,P005,Mouse inalámbrico Pro,computacion,1,45900,0.0,45900.0,BOGOTA,Marketplace,Tarjeta Crédito
+1078,2026-01-12,C138,Laura Gómez,P009,Power Bank 20000mAh,accesorios,1,79900,15.0,67915.0,BOGOTA,"Online ",PSE
+1079,01/05/2026,C139,Carlos Ruiz,P008,Cámara de Seguridad WiFi,hogar inteligente,1,149900,0.0,149900.0,Bogotá,Marketplace,PSE
+1080,2026-05-06,C100,María López,P010,Base Enfriadora Laptop,Computación,3,99900,15.0,254745.0,Bogotá,online,Tarjeta Débito
+1081,2026-03-05,C101,Valentina Díaz,P009,Power Bank 20000mAh,accesorios,-1,79900,5.0,,"cartagena ",tienda fisica,Contraentrega
+1082,26/04/2026,C102,Andrés Morales,P005,Mouse inalámbrico Pro,Computación,-1,45900,10.0,,cali,Marketplace,Contraentrega
+1083,2026-02-23,C103,Carlos Ruiz,P004,Bombillo Inteligente WiFi,Hogar Inteligente,1,39900,15.0,33915.0,bogota,online,Tarjeta Débito
+1084,01/01/2026,C104,Luis Herrera,P008,Cámara de Seguridad WiFi,hogar inteligente,3,149900,10.0,404730.0,Barranquilla,Marketplace,Tarjeta Crédito
+1085,29/06/2026,C105,Juan Pérez,P002,Smartwatch Fit 3,electronica,3,259900,0.0,779700.0,medellin,"Online ",Contraentrega
+1086,2026-01-30,C106,María López,P004,Bombillo Inteligente WiFi,hogar inteligente,3,39900,0.0,119700.0,medellin,online,Tarjeta Crédito
+1087,2026-04-23,C107,Diego Castro,P008,Cámara de Seguridad WiFi,Hogar Inteligente,3,149900,0.0,449700.0,cali,Marketplace,Contraentrega
+1088,2026-06-03,C108,Camila Rojas,P007,Parlante Portátil Boom,Audio,3,129900,0.0,389700.0,"cartagena ",Marketplace,Tarjeta Crédito
+1089,22/06/2026,C109,María López,P010,Base Enfriadora Laptop,Computación,1,99900,,99900.0,BOGOTA,Tienda Física,Contraentrega
+1090,30/05/2026,C110,Carlos Ruiz,P008,Cámara de Seguridad WiFi,Hogar Inteligente,1,149900,5.0,142405.0,Cali,Tienda Física,Efectivo
+1091,26/03/2026,C111,Pedro Sánchez,P008,Cámara de Seguridad WiFi,hogar inteligente,1,149900,15.0,127415.0,cali,tienda fisica,Tarjeta Crédito
+1092,2026-03-24,C112,Laura Gómez,P007,Parlante Portátil Boom,Audio,-1,129900,10.0,,Bogotá,"Online ",Contraentrega
+1093,13/05/2026,C113,Ana Torres,P010,Base Enfriadora Laptop,computacion,-1,99900,5.0,,Barranquilla,Online,Tarjeta Débito
+1094,2026-04-23,C114,Laura Gómez,P008,Cámara de Seguridad WiFi,hogar inteligente,1,149900,0.0,149900.0,"cartagena ",online,Tarjeta Débito
+1095,2026-01-24,C115,María López,P002,Smartwatch Fit 3,electronica,2,259900,0.0,519800.0,BOGOTA,Tienda Física,Efectivo
+1096,04/05/2026,C116,Valentina Díaz,P004,Bombillo Inteligente WiFi,Hogar Inteligente,2,39900,10.0,71820.0,BOGOTA,Tienda Física,Tarjeta Débito
+1097,18/01/2026,C117,María López,P007,Parlante Portátil Boom,audio,1,129900,,129900.0,Cartagena,Marketplace,Tarjeta Crédito
+1098,08/02/2026,C118,Pedro Sánchez,P009,Power Bank 20000mAh,Accesorios,2,79900,0.0,159800.0,Cali,tienda fisica,Contraentrega
+1099,2026-06-28,C119,Luis Herrera,P010,Base Enfriadora Laptop,computacion,2,99900,0.0,199800.0,cali,Online,Efectivo
+1100,2026-04-09,C120,Carlos Ruiz,P003,Cargador rápido 65W,accesorios,2,59900,0.0,119800.0,BOGOTA,tienda fisica,Contraentrega
+1101,2026-01-26,C121,María López,P008,Cámara de Seguridad WiFi,hogar inteligente,1,149900,15.0,127415.0,BOGOTA,Tienda Física,Tarjeta Débito
+1102,2026-06-09,C122,Pedro Sánchez,P007,Parlante Portátil Boom,audio,3,129900,0.0,389700.0,Cali,"Online ",Contraentrega
+1103,2026-05-19,C123,Carlos Ruiz,P010,Base Enfriadora Laptop,Computación,1,99900,0.0,99900.0,medellin,online,Tarjeta Crédito
+1104,2026-04-24,C124,Sofía Ramírez,P005,Mouse inalámbrico Pro,Computación,1,45900,0.0,45900.0,Cali,Online,Efectivo
+1105,2026-03-04,C125,Sofía Ramírez,P007,Parlante Portátil Boom,Audio,2,129900,15.0,220830.0,BOGOTA,online,Tarjeta Débito
+1106,2026-05-08,C126,Diego Castro,P003,Cargador rápido 65W,accesorios,1,59900,5.0,56905.0,medellin,Tienda Física,Efectivo
+1107,2026-06-23,C127,Sofía Ramírez,P003,Cargador rápido 65W,accesorios,1,59900,5.0,56905.0,Cali,tienda fisica,Efectivo
+1108,27/04/2026,C128,Pedro Sánchez,P004,Bombillo Inteligente WiFi,hogar inteligente,2,39900,,79800.0,Barranquilla,Online,Tarjeta Débito
+1109,29/06/2026,C129,Camila Rojas,P001,Audífonos Bluetooth X200,Audio,-1,89900,15.0,,cali,Marketplace,Tarjeta Crédito
+1110,2026-06-05,C130,Juan Pérez,P008,Cámara de Seguridad WiFi,hogar inteligente,-1,149900,0.0,,Medellín,tienda fisica,Efectivo
+1111,2026-06-23,C131,,P003,Cargador rápido 65W,accesorios,3,59900,0.0,179700.0,Bogotá,Marketplace,PSE
+1112,2026-02-03,C132,Valentina Díaz,P005,Mouse inalámbrico Pro,computacion,1,45900,15.0,39015.0,cali,online,Tarjeta Débito
+1113,2026-05-16,C133,Pedro Sánchez,P005,Mouse inalámbrico Pro,Computación,-1,45900,0.0,,medellin,Tienda Física,Efectivo
+1114,2026-04-30,C134,Sofía Ramírez,P003,Cargador rápido 65W,Accesorios,-1,59900,0.0,,cali,tienda fisica,Efectivo
+1115,2026-03-09,C135,Pedro Sánchez,P002,Smartwatch Fit 3,Electrónica,2,259900,0.0,519800.0,medellin,tienda fisica,PSE
+1116,2026-06-22,C136,Carlos Ruiz,P008,Cámara de Seguridad WiFi,hogar inteligente,1,149900,10.0,134910.0,Cartagena,Marketplace,Contraentrega
+1117,29/06/2026,C137,Carlos Ruiz,P007,Parlante Portátil Boom,Audio,1,129900,0.0,129900.0,Bogotá,Online,Efectivo
+1118,2026-03-02,C138,Luis Herrera,P003,Cargador rápido 65W,Accesorios,2,59900,5.0,113810.0,Cali,"Online ",Contraentrega
+1119,2026-04-17,C139,,P002,Smartwatch Fit 3,electronica,-1,259900,5.0,,"cartagena ",Tienda Física,Efectivo
+1120,25/02/2026,C100,Camila Rojas,P008,Cámara de Seguridad WiFi,hogar inteligente,1,149900,,149900.0,Cali,Online,Efectivo
+1121,16/01/2026,C101,Andrés Morales,P005,Mouse inalámbrico Pro,Computación,1,45900,0.0,45900.0,Barranquilla,Online,Tarjeta Débito
+1122,13/01/2026,C102,Valentina Díaz,P004,Bombillo Inteligente WiFi,Hogar Inteligente,1,39900,,39900.0,"cartagena ",online,Tarjeta Crédito
+1123,2026-05-31,C103,Ana Torres,P004,Bombillo Inteligente WiFi,Hogar Inteligente,1,39900,,39900.0,BOGOTA,tienda fisica,Tarjeta Crédito
+1124,19/05/2026,C104,Juan Pérez,P003,Cargador rápido 65W,accesorios,1,59900,15.0,50915.0,Bogotá,online,Tarjeta Crédito
+1125,2026-01-05,C105,Diego Castro,P005,Mouse inalámbrico Pro,computacion,1,45900,0.0,45900.0,cali,tienda fisica,Tarjeta Crédito
+1126,2026-04-03,C106,,P010,Base Enfriadora Laptop,computacion,1,99900,5.0,94905.0,Cartagena,online,Contraentrega
+1127,2026-04-28,C107,Diego Castro,P001,Audífonos Bluetooth X200,Audio,1,89900,5.0,85405.0,cali,Tienda Física,Tarjeta Crédito
+1128,21/01/2026,C108,Valentina Díaz,P010,Base Enfriadora Laptop,computacion,1,99900,0.0,99900.0,BOGOTA,Marketplace,Contraentrega
+1129,2026-04-08,C109,Luis Herrera,P009,Power Bank 20000mAh,Accesorios,1,79900,5.0,75905.0,Cartagena,tienda fisica,PSE
+1130,2026-06-17,C110,Sofía Ramírez,P009,Power Bank 20000mAh,accesorios,3,79900,,239700.0,Medellín,Tienda Física,PSE
+1131,27/04/2026,C111,Pedro Sánchez,P007,Parlante Portátil Boom,Audio,3,129900,0.0,389700.0,Cali,Tienda Física,Efectivo
+1132,25/06/2026,C112,Luis Herrera,P002,Smartwatch Fit 3,electronica,1,259900,,259900.0,bogota,Online,PSE
+1133,2026-02-03,C113,Camila Rojas,P001,Audífonos Bluetooth X200,audio,2,89900,10.0,161820.0,Cartagena,Marketplace,Tarjeta Crédito
+1134,14/01/2026,C114,Camila Rojas,P010,Base Enfriadora Laptop,computacion,1,99900,0.0,99900.0,bogota,tienda fisica,Contraentrega
+1135,2026-02-27,C115,Sofía Ramírez,P006,Teclado Mecánico RGB,Computación,-1,189900,10.0,,Cali,Online,Efectivo
+1136,2026-06-05,C116,Pedro Sánchez,P005,Mouse inalámbrico Pro,Computación,1,45900,0.0,45900.0,medellin,"Online ",Efectivo
+1137,2026-02-16,C117,Valentina Díaz,P010,Base Enfriadora Laptop,Computación,3,99900,5.0,284715.0,bogota,online,Tarjeta Crédito
+1138,07/04/2026,C118,Andrés Morales,P008,Cámara de Seguridad WiFi,Hogar Inteligente,1,149900,0.0,149900.0,Cali,Marketplace,Efectivo
+1139,2026-01-14,C119,Camila Rojas,P003,Cargador rápido 65W,accesorios,-1,59900,10.0,,Bogotá,"Online ",Tarjeta Crédito
+1140,2026-05-05,C120,Carlos Ruiz,P008,Cámara de Seguridad WiFi,hogar inteligente,2,149900,0.0,299800.0,Medellín,tienda fisica,Tarjeta Crédito
+1141,2026-06-23,C121,Andrés Morales,P010,Base Enfriadora Laptop,Computación,2,99900,10.0,179820.0,medellin,Online,Tarjeta Débito
+1142,2026-01-02,C122,Laura Gómez,P005,Mouse inalámbrico Pro,computacion,1,45900,,45900.0,BOGOTA,Marketplace,Efectivo
+1143,2026-04-21,C123,Pedro Sánchez,P003,Cargador rápido 65W,Accesorios,2,59900,10.0,107820.0,Medellín,tienda fisica,Contraentrega
+1144,2026-04-12,C124,Andrés Morales,P001,Audífonos Bluetooth X200,audio,2,89900,0.0,179800.0,Barranquilla,Online,Efectivo
+1145,13/06/2026,C125,Andrés Morales,P005,Mouse inalámbrico Pro,computacion,1,45900,5.0,43605.0,Bogotá,Marketplace,Tarjeta Débito
+1146,26/06/2026,C126,Valentina Díaz,P002,Smartwatch Fit 3,Electrónica,2,259900,,519800.0,bogota,online,PSE
+1147,12/04/2026,C127,Valentina Díaz,P006,Teclado Mecánico RGB,Computación,1,189900,0.0,189900.0,BOGOTA,Online,Contraentrega
+1148,31/03/2026,C128,Ana Torres,P003,Cargador rápido 65W,Accesorios,1,59900,0.0,59900.0,BOGOTA,Marketplace,Tarjeta Débito
+1149,2026-02-15,C129,Andrés Morales,P008,Cámara de Seguridad WiFi,hogar inteligente,2,149900,,299800.0,"cartagena ",tienda fisica,PSE
+1010,14/06/2026,C110,Luis Herrera,P003,Cargador rápido 65W,accesorios,1,59900,0.0,59900.0,Medellín,"Online ",Contraentrega
+1055,14/05/2026,C115,Pedro Sánchez,P004,Bombillo Inteligente WiFi,hogar inteligente,1,39900,5.0,37905.0,bogota,"Online ",Efectivo
