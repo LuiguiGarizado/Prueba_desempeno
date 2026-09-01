@@ -7,29 +7,27 @@ from sqlalchemy import create_engine, text
 
 load_dotenv()
 
-# 1. Cargar archivo
+#  Cargar archivo
 df = pd.read_csv('ventas_2trimestres_2026.csv')
 
-# 2. Formato de fechas
+#  Formato de fechas
 df['order_date'] = pd.to_datetime(
     df['order_date'].str.replace(r'^(\d{2})/(\d{2})/(\d{4})$', r'\3-\2-\1', regex=True),
     format='mixed',
     errors='coerce'
 )
 
-# 3. Formato order_id
+# Formato order_id
 df['order_id'] = df['order_id'].astype(str)
 
-# 4. Rellenar clientes vacíos
+# Rellenar clientes vacíos
 df['customer_name'] = df['customer_name'].fillna('unknown customer')
 
-# 5. Limpieza simple de texto (categoría, región y canal)
 
 # Arreglar categorías (quitar tildes y homogeneizar a un solo nombre)
 df['category'] = df['category'].str.strip().replace({
     'Computación': 'Computacion',
     'computación': 'Computacion',
-    'computacion': 'Computacion',
     'Electrónica': 'Electronica',
     'electrónica': 'Electronica',
     'electronica': 'Electronica',
@@ -56,16 +54,19 @@ df['sales_channel'] = df['sales_channel'].str.strip().replace({
     'tienda fisica': 'Tienda Fisica'
 }).str.title()
 
-# 6. Descuentos y totales
+#  Descuentos y totales
 df['discount_pct'] = df['discount_pct'].fillna(0)
+
 calculated_total = df['quantity'] * df['unit_price'] * (1 - df['discount_pct'])
 df['total_amount'] = df['total_amount'].fillna(calculated_total)
 df['discount_amount'] = (df['quantity'] * df['unit_price'] * df['discount_pct'] / 100)
 
-# 7. Quitar duplicados por orden
+#  Quitar duplicados por orden
+
 df = df.drop_duplicates(subset=['order_id'], keep='first').reset_index(drop=True)
 
-# Conexión a PostgreSQL
+# Conexión a PostgreSQL con variables de entorno
+
 USER = os.getenv("DB_USER")
 PASSWORD = os.getenv("DB_PASSWORD")
 HOST = os.getenv("DB_HOST", "localhost")  
@@ -84,118 +85,74 @@ except OperationalError as e:
 except Exception as e:
     print(f" Error inesperado: {e}\n")
 
-#  Creación de Tablas de Dimensión (Estructura original intacta)
-Dim_customer = (
-    df[["customer_id", "customer_name"]]
-    .drop_duplicates(subset=['customer_id'], keep='first').reset_index(drop=True)
-)
+#  Creación de Tablas de Dimensión 
 
-Dim_category = (
-    df[['category']].drop_duplicates().reset_index(drop=True)
-    .rename(columns={'category': 'category_name'})
-    .reset_index(drop=True)
-)
+
+Dim_customer = df[["customer_id", "customer_name"]].drop_duplicates().reset_index(drop=True)
+
+Dim_category = df[['category']].drop_duplicates().rename(columns={'category': 'category_name'}).reset_index(drop=True)
 Dim_category.insert(0, 'category_id', range(1, len(Dim_category) + 1))
 
 Dim_products = (
-    df[['product_id', 'product_name', 'category']].drop_duplicates(subset=['product_id'], keep='first').reset_index(drop=True)
+    df[['product_id', 'product_name', 'category']]
+    .drop_duplicates(subset=['product_id'], keep='first')
+    .merge(Dim_category.rename(columns={'category_name': 'category'}), on='category', how='left')
+    [['product_id', 'product_name', 'category_id']]
+    .reset_index(drop=True)
 )
-Dim_products = Dim_products.merge(
-    Dim_category.rename(columns={'category_name': 'category'}),
-    on='category',
-    how='left'
-)
-Dim_products = Dim_products[['product_id', 'product_name', 'category_id']].reset_index(drop=True)
 
-Dim_region = (
-    df[['region']].drop_duplicates().reset_index(drop=True)
-)
+Dim_region = df[['region']].drop_duplicates().reset_index(drop=True)
 Dim_region.insert(0, 'region_id', range(1, len(Dim_region) + 1))
 
-Dim_saleschannel = (
-    df[['sales_channel']].drop_duplicates().reset_index(drop=True)
-)
+Dim_saleschannel = df[['sales_channel']].drop_duplicates().reset_index(drop=True)
 Dim_saleschannel.insert(0, 'sales_channel_id', range(1, len(Dim_saleschannel) + 1))
 
-Dim_payment_method = (
-    df[['payment_method']].drop_duplicates().reset_index(drop=True)
-)
+Dim_payment_method = df[['payment_method']].drop_duplicates().reset_index(drop=True)
 Dim_payment_method.insert(0, 'payment_method_id', range(1, len(Dim_payment_method) + 1))
 
-# 10. Creación de Tabla de Hechos
-fact_ventas = df[
-    [
-        'order_id',
+
+# TABLA DE HECHOS 
+
+fact_ventas = (
+    df[[
+        'order_id', 
         'order_date',
         'customer_id',
         'product_id',
         'payment_method',
-        'quantity',
-        "unit_price",
-        "total_amount",
-        "discount_pct",
-        "discount_amount",
-        'region',
-        'sales_channel'
-    ]
-].drop_duplicates()
-
-fact_ventas = fact_ventas.merge(
-    Dim_products[['product_id', 'category_id']],
-    on='product_id',
-    how='left'
-)
-
-fact_ventas = fact_ventas.merge(
-    Dim_region[['region_id', 'region']],
-    on='region',
-    how='left'
-)
-
-fact_ventas = fact_ventas.merge(
-    Dim_payment_method[['payment_method', 'payment_method_id']],
-    on='payment_method',
-    how='left'
-)
-
-fact_ventas = fact_ventas.merge(
-    Dim_saleschannel[['sales_channel', 'sales_channel_id']],
-    on='sales_channel',
-    how='left'
-)
-
-fact_ventas = fact_ventas.drop_duplicates(subset=['order_id'], keep='first')
-
-fact_ventas = fact_ventas[
-    [
+        'region', 
+        'sales_channel',
+        'quantity', 
+        'unit_price', 
+        'total_amount', 
+        'discount_pct', 
+        'discount_amount'
+    ]]
+    .drop_duplicates()
+    .merge(Dim_products[['product_id', 'category_id']], on='product_id', how='left')
+    .merge(Dim_region[['region_id', 'region']], on='region', how='left')
+    .merge(Dim_payment_method[['payment_method', 'payment_method_id']], on='payment_method', how='left')
+    .merge(Dim_saleschannel[['sales_channel', 'sales_channel_id']], on='sales_channel', how='left')
+    [[
         'order_id',
         'order_date',
         'customer_id',
         'product_id',
         'category_id',
-        'region_id',
+        'region_id', 
         'payment_method_id',
         'sales_channel_id',
         'quantity',
-        "unit_price",
-        "total_amount",
-        "discount_pct",
-        "discount_amount"
-    ]
-]
+        'unit_price', 
+        'total_amount', 
+        'discount_pct', 
+        'discount_amount'
+    ]]
+    .drop_duplicates()
+    .reset_index(drop=True)
+)
 
-# 11. Limpieza de tablas en BD en cascada para remover Foreign Keys previas
-tables_to_drop = [
-    "fact_ventas", "dim_products", "dim_customer", 
-    "dim_category", "dim_region", "dim_saleschannel", "dim_payment_method"
-]
-
-with engine.connect() as conn:
-    for table in tables_to_drop:
-        conn.execute(text(f"DROP TABLE IF EXISTS {table} CASCADE;"))
-    conn.commit()
-
-# 12. Exportación de DataFrames a PostgreSQL
+#  Exportación de DataFrames a PostgreSQL
 Dim_customer.to_sql("dim_customer", engine, if_exists="replace", index=False)
 Dim_category.to_sql("dim_category", engine, if_exists="replace", index=False)
 Dim_products.to_sql("dim_products", engine, if_exists="replace", index=False)
@@ -204,7 +161,7 @@ Dim_saleschannel.to_sql("dim_saleschannel", engine, if_exists="replace", index=F
 Dim_payment_method.to_sql("dim_payment_method", engine, if_exists="replace", index=False)
 fact_ventas.to_sql("fact_ventas", engine, if_exists="replace", index=False)
 
-# 13. Definición de Primary Keys y Foreign Keys
+#  Definición de Primary Keys y Foreign Keys
 with engine.connect() as conn:
     # Claves Primarias (PK)
     conn.execute(text("ALTER TABLE dim_customer ADD PRIMARY KEY (customer_id);"))
